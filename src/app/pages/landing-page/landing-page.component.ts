@@ -15,7 +15,7 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
   }
   goTShirt(){
-    this.router.navigate(['home']);
+    this.router.navigate(['personalizar']);
   }
- 
+
 }
