@@ -1,0 +1,69 @@
+.container-landing {
+  background:
+    url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"),
+    rgb(47, 47, 47);
+  height: 91vh;
+  display: flex;
+}
+.conta-info{
+  width: 50%;
+  margin: 20px;
+  color: rgb(161, 177, 177);
+}
+.conta-img_{
+  display: none;
+}
+.btn-landing{
+  background-color: black;
+  color: azure;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: cursive;
+}
+.img-i{
+  width: 100%;
+  height: 90.51vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container-landing {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+  }
+  .conta-info{
+    width: 100%;
+    margin-left: 0;
+    padding: 10px -100px 10px 10px;
+  }
+  h1{
+    margin: 10px;
+  }
+  h2{
+    margin: 10px;
+  }
+  p{
+    margin: 10px;
+  }
+  hr{
+    width: 50%;
+    margin-left: 10px;
+  }
+  .conta-img{
+    display: none;
+  }
+  .conta-img_{
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+  }
+  .img-i_{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .btn-landing{
+    margin-left: 10px;
+  }
+}

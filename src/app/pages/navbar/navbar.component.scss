@@ -1,0 +1,43 @@
+.navbar-container{
+  display: flex;
+  background: black;
+  color: azure;
+  justify-content: space-between;
+  height: 9vh;
+}
+.list-nav{
+  display: flex;
+  justify-content: end;
+}
+.img-logo{
+  width: 150px;
+  height: 9vh;
+}
+.list-menu{
+  margin-right: 25px;
+  cursor: pointer;
+}
+.c-menu{
+  display: none;
+}
+.list{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+.list-menu{
+  display: none;
+}
+.c-menu{
+  display: flex;
+  cursor: pointer;
+}
+.list{
+  display: block;
+  position: absolute;
+  background: rgb(22, 49, 63);
+  padding: 20px;
+  height: 45vh;
+  border-radius: 0 0 1000px 0;
+  z-index: 9;
+}
+}
