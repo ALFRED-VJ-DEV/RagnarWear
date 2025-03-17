@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['personalizar']);
   }
   showMenu() {
+    console.log("menu: ", this.showM)
     this.showM = !this.showM;
   }
 }
