@@ -5,12 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CarritoService {
-  private playerasSolicitadasSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([{
-    colorCuerpo: "rgb(0, 0, 0)",
-    colorMangas: "rgb(0, 221, 255)",
-    colorTiras: "rgb(0, 0, 0)",
-    talla: "m"
-  }]);
+  private playerasSolicitadasSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
   playerasSolicitadas$ = this.playerasSolicitadasSubject.asObservable();
 
   constructor() { }
