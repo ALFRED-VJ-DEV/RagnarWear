@@ -2,7 +2,14 @@
   display: flex;
   justify-content: space-between;
 }
-
+.title-p{
+  color: white;
+  text-align: center;
+  background: black;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px 0;
+}
 .T-S-m {
   position: absolute;
   top: 150px;
