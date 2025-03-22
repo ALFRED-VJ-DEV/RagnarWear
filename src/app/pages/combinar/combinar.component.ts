@@ -81,7 +81,7 @@ export class CombinarComponent implements OnInit {
       colorTiras,
       talla
     }
-    console.table(Playera);
+    console.log(JSON.stringify(Playera, null, 2));
     this.carritoService.setPlayerasSolicitadas(Playera);
   }
   ngOnDestroy(): void {

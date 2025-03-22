@@ -25,8 +25,11 @@ export class NavbarComponent implements OnInit {
       })
     );
   }
-  goTPers() {
+  goToPers() {
     this.router.navigate(['personalizar']);
+  }
+  goToStore() {
+    this.router.navigate(['almacen']);
   }
   showMenu() {
     console.log("menu: ", this.showM)

@@ -15,6 +15,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatIconModule } from '@angular/material/icon';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { FormsModule } from '@angular/forms';
+import { StorePlayerasComponent } from './pages/store-playeras/store-playeras.component';
+import { TShirtComponent } from './Components/t-Shirt/t-Shirt.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { FormsModule } from '@angular/forms';
     OptionTirasComponent,
     CombinarComponent,
     CarritoComponent,
+    StorePlayerasComponent,
+    TShirtComponent,
   ],
   imports: [
     BrowserModule,
