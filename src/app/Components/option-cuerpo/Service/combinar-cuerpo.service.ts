@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CombinarCuerpoService {
 
-private colorSubject: BehaviorSubject<string> = new BehaviorSubject<string>("");
+private colorSubject: BehaviorSubject<string> = new BehaviorSubject<string>("rgb(0, 0, 0)");
   color$ = this.colorSubject.asObservable();
 
   constructor() { }

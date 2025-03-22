@@ -13,6 +13,8 @@ import { OptionTirasComponent } from './Components/option-tiras/option-tiras.com
 import { CombinarComponent } from './pages/combinar/combinar.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatIconModule } from '@angular/material/icon';
+import { CarritoComponent } from './pages/carrito/carrito.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,15 @@ import { MatIconModule } from '@angular/material/icon';
     OptionMangasComponent,
     OptionCuerpoComponent,
     OptionTirasComponent,
-    CombinarComponent
+    CombinarComponent,
+    CarritoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatIconModule,
+    FormsModule,
   ],
   providers: [
     provideAnimationsAsync()

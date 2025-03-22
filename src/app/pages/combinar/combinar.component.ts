@@ -1,3 +1,4 @@
+import { CarritoService } from './../carrito/Services/carrito.service';
 import { Subscription } from 'rxjs';
 import { CombinarMangasService } from './../../Components/option-mangas/Services/combinar-mangas.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,9 +11,11 @@ import { CombinarTirasService } from '../../Components/option-tiras/Service/comb
   styleUrls: ['./combinar.component.scss']
 })
 export class CombinarComponent implements OnInit {
-  colorM: string = "rgb(255, 0, 0)";
+  colorM: string = "rgb(255, 255, 255)";
   colorC: string = "rgb(0, 0, 0)";
   colorT: string = "rgb(0, 0, 0)";
+  opcionSeleccionada: string = 'm'; // Almacena la opción seleccionada
+
 
   private subs: Subscription[] = [];
 
@@ -20,6 +23,7 @@ export class CombinarComponent implements OnInit {
     private combinarMangasService: CombinarMangasService,
     private combinarCuerpoService: CombinarCuerpoService,
     private combinarTirasService: CombinarTirasService,
+    private carritoService: CarritoService,
   ) { }
 
   ngOnInit() {
@@ -67,7 +71,18 @@ export class CombinarComponent implements OnInit {
   }
 
   add(){
-    
+    let colorMangas: string = this.combinarMangasService.getColor;
+    let colorCuerpo: string = this.combinarCuerpoService.getColor;
+    let colorTiras: string = this.combinarTirasService.getColor;
+    let talla: string = this.opcionSeleccionada;
+    const Playera = {
+      colorCuerpo,
+      colorMangas,
+      colorTiras,
+      talla
+    }
+    console.table(Playera);
+    this.carritoService.setPlayerasSolicitadas(Playera);
   }
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.

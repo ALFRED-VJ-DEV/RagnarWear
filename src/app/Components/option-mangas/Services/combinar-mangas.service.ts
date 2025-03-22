@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CombinarMangasService {
-  private colorSubject: BehaviorSubject<string> = new BehaviorSubject<string>("");
+  private colorSubject: BehaviorSubject<string> = new BehaviorSubject<string>("rgb(255, 0, 0)");
   color$ = this.colorSubject.asObservable();
 
   constructor() { }

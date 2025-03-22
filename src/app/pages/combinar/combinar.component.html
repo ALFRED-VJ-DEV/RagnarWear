@@ -1,6 +1,8 @@
 <div class="container-ts">
   <div class="cont-ts">
-    <p class="title-p">Tu playera</p>
+    <div>
+      <p class="title-p">Tu playera</p>
+    </div>
     <svg class="T-S-c" version="1.0" xmlns="http://www.w3.org/2000/svg" width="500.000000pt" height="500.000000pt"
       viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
 
@@ -69,6 +71,21 @@
       <app-option-tiras></app-option-tiras>
     </div>
     <div style="display: flex; justify-content: end;">
+      <form class="form-talla">
+        <label>
+          <input type="radio" name="opcion" value="ch" [(ngModel)]="opcionSeleccionada"> CH
+        </label>
+        <label>
+          <input type="radio" name="opcion" value="m" [(ngModel)]="opcionSeleccionada"> M
+        </label>
+        <label>
+          <input type="radio" name="opcion" value="g" [(ngModel)]="opcionSeleccionada"> G
+        </label>
+        <label>
+          <input type="radio" name="opcion" value="xg" [(ngModel)]="opcionSeleccionada"> XG
+        </label>
+      </form>
+
       <button (click)="add()" class="btn-cc">Agregar al carrito</button>
     </div>
   </div>

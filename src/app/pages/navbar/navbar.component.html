@@ -8,6 +8,7 @@
     <p class="list-menu">Playeras</p>
     <p class="list-menu" (click)="goTPers()">Combinar Mi Playera</p>
     <p class="list-menu">Contacto</p>
+    <div><mat-icon class="list-menu i-car">shopping_cart</mat-icon><div class="number-cir"><span class="number-car">{{carritoTotla}}</span></div></div>
   </div>
   <div class="c-menu">
     <mat-icon style="margin: 15px; z-index: 10;" (click)="showMenu()">menu</mat-icon>
@@ -16,5 +17,17 @@
     <p (click)="showMenu()" class="l-menu"><mat-icon>dashboard</mat-icon> Playeras</p>
     <p (click)="showMenu(); goTPers()" class="l-menu"><mat-icon>dashboard</mat-icon> Combinar Mi Playera</p>
     <p (click)="showMenu()" class="l-menu"><mat-icon>dashboard</mat-icon> Contacto</p>
+    <p (click)="showMenu()" class="l-menu"><mat-icon>shopping_cart</mat-icon> Ir al carrito</p>
   </div>
 </div>
+
+
+<!-- colorCuerpo
+:
+"rgb(0, 0, 0)"
+colorMangas
+:
+"rgb(255, 0, 0)"
+colorTiras
+:
+"rgb(0, 0, 0)" -->

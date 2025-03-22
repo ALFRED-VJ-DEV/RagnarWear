@@ -28,6 +28,7 @@
 .list-menu{
   display: none;
 }
+
 .c-menu{
   display: flex;
   cursor: pointer;
@@ -41,4 +42,24 @@
   border-radius: 0 0 1000px 0;
   z-index: 9;
 }
+.number-cir{
+  display: none;
+}
+}
+.number-cir{
+  position: absolute;
+  top: 20px;
+  left: 98%;
+  color: rgb(255, 255, 255);
+  background: red;
+  padding: 8px 8px;
+  border-radius: 50px;
+  font-size: 10px;
+  width: 2px;
+  height: 2px;
+}
+.number-car{
+  position: absolute;
+  top: -3px;
+  left: 7px;
 }
