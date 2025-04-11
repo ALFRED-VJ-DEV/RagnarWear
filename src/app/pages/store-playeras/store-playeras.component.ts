@@ -10,12 +10,17 @@ export class StorePlayerasComponent implements OnInit {
   playeras: any[] = [];
   currentIndex: number = 0;
   currentPlayera: any = null;
+  tallas: string = "";
 
   constructor(private carritoService: CarritoService) { }
 
   ngOnInit() {
     this.playeras = this.carritoService.getPlayerasSolicitadas;
+
     if (this.playeras.length > 0) {
+      this.playeras.map( t => {
+        this.tallas = this.tallas + t.talla + ", "
+      })
       this.currentPlayera = this.playeras[0]; // Inicializamos con la primera playera
     }
   }
@@ -32,6 +37,7 @@ export class StorePlayerasComponent implements OnInit {
       // 🔥 Forzamos la reasignación con un pequeño delay
       setTimeout(() => {
         this.currentPlayera = this.playeras[newIndex];
+        console.log({currentPlayera: this.currentPlayera})
       }, 50);
     }
   }

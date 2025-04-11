@@ -1,11 +1,4 @@
 <div class="container-store">
-  <div>
-    <p>Ya casi son tuyas estas playeras</p>
-  </div>
-  <div>
-    <p>{{ 'Playeras totales: ' + playeras.length }}</p>
-  </div>
-
   <div class="playera-container">
     <ng-container *ngIf="currentPlayera">
       <app-t-Shirt [playera]="currentPlayera"></app-t-Shirt>
@@ -17,4 +10,20 @@
     <button (click)="changePlayera(-1)" [disabled]="currentIndex === 0">Anterior</button>
     <button (click)="changePlayera(1)" [disabled]="currentIndex === playeras.length - 1">Siguiente</button>
   </div>
+<div style="display: flex; justify-content: center; margin-top: 50px;">
+  <div class="card-resumen">
+    <h2>RESUMEN</h2>
+    <p>Playeras totales: <span>{{playeras.length }}(Tallas: {{tallas}} )</span></p>
+    <p>Total: <span>${{playeras.length * 140 }}.00</span></p>
+    <button>HACER EL PEDIDO</button>
+  </div>
 </div>
+<div style="display: flex; justify-content: center; margin-top: 50px;">
+  <div class="card-btn">
+    <button style="width: 100%; margin-bottom: 10px;">SEGUIR COMPRANDO</button>
+    <button style="width: 100%; margin-bottom: 10px;">ELIMINA ESTA PLAYERA</button>
+    <button style="width: 100%; margin-bottom: 10px;">VACIAR CARRITO</button>
+  </div>
+</div>
+</div>
+

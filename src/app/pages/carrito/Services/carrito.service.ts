@@ -11,7 +11,7 @@ export class CarritoService {
   constructor() { }
 
   setPlayerasSolicitadas(value:any){
-    console.log("entrando");
+    console.log("value: ", value);
     let container = this.getPlayerasSolicitadas;
     container.push(value);
     this.playerasSolicitadasSubject.next(container)

@@ -33,6 +33,16 @@ button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+.card-resumen{
+  background: rgb(239, 254, 255);
+  color:  black;
+  width: 25%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card-btn{
+  width: 30%;
+}
 /* Estilos para móviles */
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
   .T-S-m {
@@ -63,6 +73,101 @@ button:disabled {
   margin-top: 5px;
 }
 /* Estilos para móviles */
-@media screen and (max-width: 360px) and (max-height: 640px) {
+@media screen and (max-width: 800px) and (max-height: 1280px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
+}
+/* Estilos para móviles */
+@media screen and (max-width: 775px) and (max-height: 640px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 120vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
+}
+/* Estilos para móviles */
+@media screen and (max-width: 712px) and (max-height: 1138px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
+}
+/* Estilos para móviles */
+@media screen and (max-width: 640px) and (max-height: 360px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
+}
+/* Estilos para móviles */
+@media screen and (max-width: 600px) and (max-height: 1024px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
+}
+/* Estilos para móviles */
+@media screen and (max-width: 575px) and (max-height: 640px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
+}
 
+/* Estilos para móviles */
+@media screen and (max-width: 360) and (max-height: 640px) {
+  .card-resumen{
+    background: rgb(239, 254, 255);
+    color:  black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70vh;
+  }
+  .card-btn{
+    width: 100%;
+  }
 }
