@@ -15,7 +15,7 @@
     <h2>RESUMEN</h2>
     <p>Playeras totales: <span>{{playeras.length }}(Tallas: {{tallas}} )</span></p>
     <p>Total: <span>${{playeras.length * 140 }}.00</span></p>
-    <button>HACER EL PEDIDO</button>
+    <button (click)="enviarWhatsApp()">HACER EL PEDIDO</button>
   </div>
 </div>
 <div style="display: flex; justify-content: center; margin-top: 50px;">

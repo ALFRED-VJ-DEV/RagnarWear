@@ -41,4 +41,13 @@ export class StorePlayerasComponent implements OnInit {
       }, 50);
     }
   }
+
+  // En tu componente.ts
+enviarWhatsApp() {
+  const numero = '5579947397'; // Reemplaza con el número deseado
+  const mensaje = 'Hola, estoy interesado en tu servicio';
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank'); // Abre en una nueva pestaña o ventana
+}
+
 }
