@@ -49,7 +49,7 @@ export class StorePlayerasComponent implements OnInit {
   enviarWhatsApp() {
     const pedido = this.mapearPlayeras();
     const numero = '5579947397'; // Número de destino
-    const mensaje = `Hola, estoy interesado en tu servicio. %0A%0A${pedido}`;
+    const mensaje = `Hola, estoy interesado en tu servicio. %0A%0A ${pedido}`;
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   }
