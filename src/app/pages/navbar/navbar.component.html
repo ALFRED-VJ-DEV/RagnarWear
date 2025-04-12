@@ -1,7 +1,7 @@
 <div class="navbar-container">
   <div style="display: flex; cursor: pointer;" (click)="gotToHome()">
     <!-- zona de logo y titulo -->
-    <img class="img-logo" src="TlogoRW.png" alt="logo">
+    <img (click)="gotToHome()" class="img-logo" src="TlogoRW.png" alt="logo">
   </div>
   <div class="list-nav">
     <!-- zona de menu -->
@@ -14,9 +14,9 @@
     <mat-icon style="margin: 15px; z-index: 10;" (click)="showMenu()">menu</mat-icon>
   </div>
   <div *ngIf="showM" class="list" >
-    <p (click)="showMenu()" class="l-menu"><mat-icon>dashboard</mat-icon> Playeras</p>
+    <!-- <p (click)="showMenu()" class="l-menu"><mat-icon>dashboard</mat-icon> Playeras</p> -->
     <p (click)="showMenu(); goToPers()" class="l-menu"><mat-icon>dashboard</mat-icon> Combinar Mi Playera</p>
-    <p (click)="showMenu()" class="l-menu"><mat-icon>dashboard</mat-icon> Contacto</p>
+    <!-- <p (click)="showMenu()" class="l-menu"><mat-icon>dashboard</mat-icon> Contacto</p> -->
     <p (click)="showMenu(); goToStore()" class="l-menu"><mat-icon>shopping_cart</mat-icon> {{'Ir al carrito (' + carritoTotla + ')'}}</p>
   </div>
 </div>
