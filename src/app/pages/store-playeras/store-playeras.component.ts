@@ -25,7 +25,7 @@ export class StorePlayerasComponent implements OnInit {
 
     if (this.playeras.length > 0) {
       this.playeras.map( t => {
-        this.tallas = this.tallas + t.talla + ", "
+        this.tallas = this.tallas + t.talla.toUpperCase() + ", "
       })
       this.currentPlayera = this.playeras[0]; // Inicializamos con la primera playera
     }
@@ -63,7 +63,7 @@ mapearPlayeras(): string {
   let pedido = '🛍 *Mi pedido es el siguiente:*\n\n';
 
   this.playeras.forEach((playera, index) => {
-    pedido += `${index + 1}. *Playera talla ${playera.talla}*\n`;
+    pedido += `${index + 1}. *Playera talla ${playera.talla.toUpperCase()}*\n`;
     pedido += `   - Color de cuerpo: ${this.colores[playera.colorCuerpo]}\n`;
     pedido += `   - Color de mangas: ${this.colores[playera.colorMangas]}\n\n`;
   });
