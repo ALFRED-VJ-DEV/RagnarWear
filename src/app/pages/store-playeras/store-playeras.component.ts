@@ -46,30 +46,26 @@ export class StorePlayerasComponent implements OnInit {
   }
 
   // En tu componente.ts
-enviarWhatsApp() {
-  const pedido = this.mapearPlayeras();
-  const numero = '5579947397'; // Reemplaza con el número deseado
-  const mensaje = `Hola, estoy interesado en tu servicio, mi pedido es el siguiente: ${JSON.stringify(pedido, null, 2)}`;
-  console.log({ pedido })
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, '_blank'); // Abre en una nueva pestaña o ventana
+  enviarWhatsApp() {
+    const pedido = this.mapearPlayeras();
+    const numero = '5579947397'; // Número de destino
+    const mensaje = `Hola, estoy interesado en tu servicio. %0A%0A${pedido}`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  }
+
+
+mapearPlayeras(): string {
+  console.log("Entrando a mapear playeras");
+  let pedido = '🛍 *Mi pedido es el siguiente:*\n\n';
+
+  this.playeras.forEach((playera, index) => {
+    pedido += `${index + 1}. *Playera talla ${playera.talla}*\n`;
+    pedido += `   - Color de cuerpo: ${this.colores[playera.colorCuerpo]}\n`;
+    pedido += `   - Color de mangas: ${this.colores[playera.colorMangas]}\n\n`;
+  });
+
+  return pedido;
 }
 
-  mapearPlayeras() {
-    console.log("Entrando a mapear playeras")
-    let contador: number = 0;
-    const pedidoPlayeras: Playera[] = []
-    while (contador < this.playeras.length) {
-      ++contador;
-      console.log({ playerasOriginales: this.playeras[contador - 1] })
-      let playera: Playera = {
-        colorCuerpo: this.colores[this.playeras[contador - 1].colorCuerpo],
-        colorMangas: this.colores[this.playeras[contador - 1].colorMangas],
-        colorTiras: this.colores[this.playeras[contador - 1].colorTiras],
-        talla: this.colores[this.playeras[contador - 1].talla]
-      }
-      pedidoPlayeras.push(playera);
-    }
-    return pedidoPlayeras
-  }
 }
