@@ -4,6 +4,7 @@ import { CombinarMangasService } from './../../Components/option-mangas/Services
 import { Component, OnInit } from '@angular/core';
 import { CombinarCuerpoService } from '../../Components/option-cuerpo/Service/combinar-cuerpo.service';
 import { CombinarTirasService } from '../../Components/option-tiras/Service/combinar-tiras.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-combinar',
@@ -24,6 +25,7 @@ export class CombinarComponent implements OnInit {
     private combinarCuerpoService: CombinarCuerpoService,
     private combinarTirasService: CombinarTirasService,
     private carritoService: CarritoService,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -82,6 +84,10 @@ export class CombinarComponent implements OnInit {
       talla
     }
     this.carritoService.setPlayerasSolicitadas(Playera);
+  }
+
+  gotToCar(){
+    this.router.navigate(['/almacen']);
   }
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.

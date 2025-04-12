@@ -33,6 +33,9 @@ export class NavbarComponent implements OnInit {
   showMenu() {
     this.showM = !this.showM;
   }
+  gotToHome(){
+    this.router.navigate(['']);
+  }
   ngOnDestroy(){
     if(this.subs.length){
       this.subs.forEach(s => s.unsubscribe());

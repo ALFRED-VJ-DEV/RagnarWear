@@ -1,13 +1,13 @@
 <div class="navbar-container">
-  <div style="display: flex;">
+  <div style="display: flex; cursor: pointer;" (click)="gotToHome()">
     <!-- zona de logo y titulo -->
     <img class="img-logo" src="TlogoRW.png" alt="logo">
   </div>
   <div class="list-nav">
     <!-- zona de menu -->
-    <p class="list-menu">Playeras</p>
+    <!-- <p class="list-menu">Playeras</p> -->
     <p class="list-menu" (click)="goToPers()">Combinar Mi Playera</p>
-    <p class="list-menu">Contacto</p>
+    <!-- <p class="list-menu">Contacto</p> -->
     <div (click)="goToStore()"><mat-icon class="list-menu i-car">shopping_cart</mat-icon><div class="number-cir"><span class="number-car">{{carritoTotla}}</span></div></div>
   </div>
   <div class="c-menu">

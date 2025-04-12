@@ -2,6 +2,7 @@ import { CarritoService } from './../carrito/Services/carrito.service';
 import { Component, OnInit } from '@angular/core';
 import { colorMap } from './Colores/colores';
 import { Playera } from '../../Components/t-Shirt/Interface/playera';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-store-playeras',
@@ -15,7 +16,9 @@ export class StorePlayerasComponent implements OnInit {
   currentPlayera: any = null;
   tallas: string = "";
 
-  constructor(private carritoService: CarritoService) { }
+  constructor(private carritoService: CarritoService,
+    private router: Router,
+  ) { }
 
   ngOnInit() {
     this.playeras = this.carritoService.getPlayerasSolicitadas;
@@ -67,5 +70,7 @@ mapearPlayeras(): string {
 
   return pedido;
 }
-
+  reenviarCombinarPlayera(){
+    this.router.navigate(['/personalizar']);
+  }
 }
