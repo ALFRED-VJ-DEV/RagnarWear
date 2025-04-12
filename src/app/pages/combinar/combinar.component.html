@@ -70,7 +70,7 @@
       <app-option-cuerpo></app-option-cuerpo>
       <!-- <app-option-tiras></app-option-tiras> -->
     </div>
-    <div style="display: flex; justify-content: end;">
+    <div style="display: flex; justify-content: center;">
       <form class="form-talla">
         <label>
           <input type="radio" name="opcion" value="ch" [(ngModel)]="opcionSeleccionada"> CH
@@ -86,6 +86,8 @@
         </label>
       </form>
 
+</div>
+    <div style="display: flex; margin: 20px 0 80px 0; justify-content: space-around;">
       <button (click)="add()" class="btn-cc">Agregar al carrito</button>
       <button (click)="gotToCar()" class="btn-cc">Ir al carrito</button>
     </div>
