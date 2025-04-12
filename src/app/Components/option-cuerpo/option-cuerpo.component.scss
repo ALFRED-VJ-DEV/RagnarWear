@@ -2,7 +2,7 @@
   border: solid .1px black;
   width: 20px;
   height: 20px;
-  background: red;
+  background: rgb(239, 46, 149); /* rosa-fuerte */
   border-radius: 10px;
   margin: 10px;
 }
@@ -11,7 +11,7 @@
   border: solid .1px black;
   width: 20px;
   height: 20px;
-  background: rgb(0, 138, 217);
+  background: rgb(0, 0, 128); /* azul-marino */
   border-radius: 10px;
   margin: 10px;
 }
@@ -20,7 +20,7 @@
   border: solid .1px black;
   width: 20px;
   height: 20px;
-  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0); /* negro */
   border-radius: 10px;
   margin: 10px;
 }
@@ -29,7 +29,7 @@
   border: solid .1px black;
   width: 20px;
   height: 20px;
-  background: rgb(9, 185, 0);
+  background: rgb(111, 184, 39); /* verde-pasto */
   border-radius: 10px;
   margin: 10px;
 }
@@ -38,7 +38,7 @@
   border: solid .1px black;
   width: 20px;
   height: 20px;
-  background: rgb(1, 52, 255);
+  background: rgb(0, 32, 146); /* azul-rey */
   border-radius: 10px;
   margin: 10px;
 }
@@ -47,7 +47,7 @@
   border: solid .1px black;
   width: 20px;
   height: 20px;
-  background: rgb(34, 35, 35);
+  background: rgb(63, 67, 71); /* gris-rata-jaspeado */
   border-radius: 10px;
   margin: 10px;
 }
@@ -56,7 +56,7 @@
   border: solid .1px rgb(40, 40, 40);
   width: 20px;
   height: 20px;
-  background: rgb(126, 126, 126);
+  background: rgb(162, 162, 162); /* gris-claro-jaspeado */
   border-radius: 10px;
   margin: 10px;
 }
@@ -65,7 +65,7 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255); /* blanco */
   border-radius: 10px;
   margin: 10px;
 }
@@ -74,8 +74,7 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: #4B5320;
-  /* Verde militar */
+  background: rgb(62, 78, 35); /* verde-militar */
   border-radius: 10px;
   margin: 10px;
 }
@@ -84,8 +83,7 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: #800020;
-  /* Color vino */
+  background: rgb(73, 9, 25); /* vino */
   border-radius: 10px;
   margin: 10px;
 }
@@ -94,8 +92,7 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: #011370;
-  /* Azul marino */
+  background: rgb(0, 0, 128); /* azul-marino */
   border-radius: 10px;
   margin: 10px;
 }
@@ -104,7 +101,7 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: #FFFF00;
+  background: rgb(255, 255, 0); /* amarillo */
   border-radius: 10px;
   margin: 10px;
 }
@@ -113,7 +110,7 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: #FFA500;
+  background: rgb(255, 165, 0); /* naranja */
   border-radius: 10px;
   margin: 10px;
 }
@@ -122,7 +119,97 @@
   border: solid 0.1px black;
   width: 20px;
   height: 20px;
-  background: #8B4513;
+  background: rgb(178, 34, 34); /* ladrillo */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-1 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(202, 148, 202); /* lila */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-2 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(144, 238, 144); /* verde-agua */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-3 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(135, 206, 235); /* azul-cielo */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-4 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(239, 234, 218); /* hueso */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-5 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(183, 143, 0); /* mostaza */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-6 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(216, 195, 150); /* beige */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-7 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(124, 71, 112); /* rosa-jaspeado */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-8 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(191, 255, 0); /* verde-limón */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-9 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 182, 193); /* rosa-claro */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-10 {
+  border: solid 0.1px black;
+  width: 20px;
+  height: 20px;
+  background: rgb(55, 101, 114); /* azul petróleo-jaspeado */
   border-radius: 10px;
   margin: 10px;
 }

@@ -1,22 +1,22 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { Playera } from '../../../Components/t-Shirt/Interface/playera';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CarritoService {
-  private playerasSolicitadasSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
+  private playerasSolicitadasSubject: BehaviorSubject<Playera[]> = new BehaviorSubject<any[]>([]);
   playerasSolicitadas$ = this.playerasSolicitadasSubject.asObservable();
 
   constructor() { }
 
-  setPlayerasSolicitadas(value:any){
-    console.log("value: ", value);
+  setPlayerasSolicitadas(value:Playera){
     let container = this.getPlayerasSolicitadas;
     container.push(value);
     this.playerasSolicitadasSubject.next(container)
   }
-  get getPlayerasSolicitadas():any[]{
+  get getPlayerasSolicitadas():Playera[]{
     return this.playerasSolicitadasSubject.getValue();
   }
 }

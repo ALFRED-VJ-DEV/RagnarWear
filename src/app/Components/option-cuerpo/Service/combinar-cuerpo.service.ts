@@ -12,7 +12,6 @@ private colorSubject: BehaviorSubject<string> = new BehaviorSubject<string>("rgb
   constructor() { }
 
   setColor(value: string) {
-    console.log({colorManga: value})
     this.colorSubject.next(value);
   }
 

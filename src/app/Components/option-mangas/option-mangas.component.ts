@@ -19,7 +19,6 @@ export class OptionMangasComponent implements OnInit {
     const input = event.target as HTMLInputElement;
     const colorDiv = input.nextElementSibling as HTMLElement;
     this.selectedColor = window.getComputedStyle(colorDiv).backgroundColor;
-    console.log('Color seleccionado:', this.selectedColor); // RGB del color
     this.combinarMangasService.setColor(window.getComputedStyle(colorDiv).backgroundColor);
   }
 

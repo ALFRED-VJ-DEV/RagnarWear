@@ -12,7 +12,6 @@ export class CombinarTirasService {
   constructor() { }
 
   setColor(value: string) {
-    console.log({colorManga: value})
     this.colorSubject.next(value);
   }
 

@@ -11,7 +11,7 @@ import { CombinarTirasService } from '../../Components/option-tiras/Service/comb
   styleUrls: ['./combinar.component.scss']
 })
 export class CombinarComponent implements OnInit {
-  colorM: string = "rgb(255, 255, 255)";
+  colorM: string = "rgb(0, 0, 128)";
   colorC: string = "rgb(0, 0, 0)";
   colorT: string = "rgb(0, 0, 0)";
   opcionSeleccionada: string = 'm'; // Almacena la opción seleccionada
@@ -81,7 +81,6 @@ export class CombinarComponent implements OnInit {
       colorTiras,
       talla
     }
-    console.log(JSON.stringify(Playera, null, 2));
     this.carritoService.setPlayerasSolicitadas(Playera);
   }
   ngOnDestroy(): void {

@@ -21,7 +21,6 @@ export class NavbarComponent implements OnInit {
     this.subs.push(
       this.carritoService.playerasSolicitadas$.subscribe(value => {
         this.carritoTotla = value.length
-        console.log({value})
       })
     );
   }
@@ -32,7 +31,6 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['almacen']);
   }
   showMenu() {
-    console.log("menu: ", this.showM)
     this.showM = !this.showM;
   }
   ngOnDestroy(){
